@@ -1,0 +1,40 @@
+{
+  "name": "honeybadger",
+  "description": "Check to see if a site is available on multiple networks",
+  "version": "0.1.0",
+  "homepage": "https://github.com/matt/icanhaswww",
+  "author": {
+    "name": "Matt McManus",
+    "email": "mattmcmanus@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/matt/honeybadger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matt/honeybadger/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/matt/honeybadger/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/honeybadger",
+  "engines": {
+    "node": "~0.6.15"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "request": "2.9",
+    "lazy":"1.x",
+    "async": "0.x",
+    "underscore": "*"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.9"
+  },
+  "keywords": []
+}
