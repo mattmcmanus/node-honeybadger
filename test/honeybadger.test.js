@@ -1,5 +1,5 @@
 var HB = require('../lib/honeybadger.js'),
-    honeybadger = new HB();
+    honeybadger = new HB({zones: ['localhost', 'root@cas.arcadia.edu']});
 
 /*
   ======== A Handy Little Nodeunit Reference ========
