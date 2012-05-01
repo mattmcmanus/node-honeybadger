@@ -26,15 +26,12 @@ exports['honeybadger'] = {
     done();
   },
   'test from localhost to google.com': function(test) {
-    test.expect(2);
-    // tests here
-    honeybadger.badger('google.com', function(err, results){
-      
+    test.expect(3);
+    honeybadger.badger('www.google.com', function(err, results){
       test.equal( err, null, 'should be null.' );
       test.ok( results[0].nslookup.status, 'should properly resolve dns' );
+      test.ok( results[0].curl.status, 'should properly retrieve status code' );
       test.done();
     });
-    
-    
   }
 };
