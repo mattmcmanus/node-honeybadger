@@ -32,6 +32,13 @@ exports['honeybadger'] = {
       test.done();
     });
   },
+  'test from localhost to invalid hostname': function(test) {
+    test.expect(1);
+    honeybadger.badger('google.com;ls', function(err, results){
+      test.equal( err, 'You did not supply a valid hostname', 'should yell at you for not supplying a valid hostname' );
+      test.done();
+    });
+  },
   'test from localhost to google.com': function(test) {
     test.expect(3);
     honeybadger.badger('www.google.com', function(err, results){
