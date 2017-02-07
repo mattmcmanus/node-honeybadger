@@ -28,11 +28,11 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "async": "0.x",
+    "async": "^2.1.4",
     "underscore": "*"
   },
   "devDependencies": {
-    "grunt": "~0.3.9"
+    "grunt": "~1.0.1"
   },
   "keywords": ["dns","curl", "nslookup"]
 }
