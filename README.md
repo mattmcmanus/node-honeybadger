@@ -1,5 +1,7 @@
 # node-honeybadger
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mattmcmanus/node-honeybadger.svg)](https://greenkeeper.io/)
+
 Honeybadger is a network diagnostic tool that makes it easy to test DNS and firewall configurations across multiple networks and subnets. 
 
 ## Getting Started
